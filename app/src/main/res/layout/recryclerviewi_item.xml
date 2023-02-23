@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="200dp"
+    android:layout_height="280dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/relativelayoutanima">
+    <androidx.cardview.widget.CardView
+        app:cardCornerRadius="5dp"
+        app:cardElevation="3dp"
+        app:cardUseCompatPadding="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true">
+        <RelativeLayout
+            android:id="@+id/recyclerviewitem"
+            android:clickable="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackground">
+
+            <ImageView
+                android:id="@+id/imagesviewitem"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_below="@id/textviewitem"
+                android:layout_marginBottom="27dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:src="@drawable/ayiq">
+                ></ImageView>
+
+            <TextView
+                android:id="@+id/textviewitem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Aa"
+                android:textStyle="bold"
+                android:textColor="#E91E63"
+                android:textSize="80dp" />
+            <TextView
+                android:id="@+id/textitem"
+                android:layout_toRightOf="@id/textviewitem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ayiq"
+                android:textStyle="italic"
+                android:textSize="20dp"
+                android:layout_margin="10dp"
+                android:layout_marginStart="5dp">
+            </TextView>
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_below="@id/imagesviewitem"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>
